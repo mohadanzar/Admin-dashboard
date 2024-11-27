@@ -1,0 +1,395 @@
+/* Left navigation container */
+.left-nav {
+    height: 100vh;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-right: 1px solid #e9ecef;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1040;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add left margin to all child elements */
+.left-nav>* {
+    margin-left: 15px;
+}
+
+/* Section titles inside left-nav */
+.left-nav .section-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6c757d;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Navigation links */
+.left-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #212529;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Increase the icon size and space them from the text */
+.left-nav .nav-link i {
+    font-size: 20px;
+    /* Increased size of the icon */
+    margin-right: 15px;
+    /* Increased space between icon and text */
+}
+
+/* Hover and active states for links */
+.left-nav .nav-link:hover {
+    background-color: #e7f3ff;
+    color: #084298;
+    padding-left: 20px;
+    /* Increased padding to the left for better alignment */
+}
+
+.left-nav .nav-link.active {
+    background-color: #e7f3ff;
+    color: #084298;
+    font-weight: bold;
+    padding-left: 20px;
+    /* Increased padding to the left for active state */
+}
+
+/* Pro card inside left-nav */
+.mantis-pro-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+/* Button-specific styling for pro card */
+.btn-pro {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #084298;
+    background-color: #e7f3ff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-pro:hover {
+    background-color: #cfe2ff;
+    color: #052c65;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Make all links interactive */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    /* background-color: #e7f3ff; */
+    color: #084298;
+}
+
+/* Important - Sidebar positioning */
+#leftNav {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+#leftNav.open {
+    transform: translateX(0);
+}
+
+.shifted {
+    margin-left: 300px;
+    transition: margin-left 0.3s ease;
+}
+
+#mainContent {
+    background-color: #f8f9fa;
+
+}
+
+/* Default styling for larger screens */
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+    /* Add spacing between items */
+}
+
+.nav-item {
+    list-style: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 770px) {
+    .navbar-nav {
+        flex-direction: row;
+        /* Stack items vertically */
+        align-items: flex-end;
+        /* Align to the right */
+        gap: 10px;
+        /* Adjust spacing */
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        /* Slightly larger text for touch accessibility */
+    }
+}
+
+
+
+.custom-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    /* Align content to the left */
+}
+
+.custom-card h6 {
+    color: #333;
+    font-weight: bold;
+}
+
+.custom-card h2 {
+    color: #000000;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    /* Align badge with the text */
+    gap: 8px;
+    /* Add space between text and badge */
+}
+
+.badge-light-blue {
+    background-color: #dbeeff;
+    /* Light blue background for the badge */
+    color: #007bff;
+    /* Text color for the badge */
+}
+
+.rise-arrow {
+    margin-left: 4px;
+}
+
+.chart-container {
+    background-color: #f8f9fa;
+    /* Light background for the chart area */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chart-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #659edb;
+}
+
+.img-fluid {
+    max-width: 100%;
+    min-width: 98%;
+    /* height: auto; */
+}
+
+.img-fluid1 {
+    max-width: 100;
+    min-width: 50%;
+    /* height: auto; */
+}
+
+
+
+/* Table Styles */
+.table {
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+    /* overflow-x: auto; */
+    /* width: 100%; */
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.tr {
+    height: 60px;
+}
+
+/* Status Dot Styles */
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.status-dot.rejected {
+    background-color: #ff0015;
+}
+
+.status-dot.approved {
+    background-color: #48db6a;
+}
+
+.status-dot.pending {
+    background-color: #f3cd4f;
+}
+
+/* Analytics Report Styles */
+.analytics-report {
+    margin-top: 30px;
+}
+
+.analytics-report h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.analytics-report .metric {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.analytics-report .metric-value {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.analytics-report .business-risk-cases {
+    font-size: 16px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.item:hover .content {
+    opacity: 1;
+}
+
+/* Card hover effect */
+.order-item {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Help button hover */
+.help-btn {
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.help-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
+
+/* For devices smaller than 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
