@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+
+    <style>
+        
+        .bg-primary-lighter {
+  background-color: #cde8f8 !important;
+}
+
+.bg-primary-100 {
+  background-color: #bee7ff !important;
+}
+
+.bg-primary-200 {
+  background-color: #91d5ff !important;
+}
+
+.bg-primary-light {
+  background-color: #69c0ff !important;
+}
+
+.bg-primary-400 {
+  background-color: #40a9ff !important;
+}
+
+.bg-primary-main {
+  background-color: #1890ff !important;
+}
+
+.bg-primary-dark {
+  background-color: #096dd9 !important;
+}
+
+.bg-primary-700 {
+  background-color: #0050b3 !important;
+}
+
+.bg-primary-darker {
+  background-color: #003a8c !important;
+}
+
+.bg-primary-900 {
+  background-color: #002766 !important;
+}
+
+.bg-secondary-lighter {
+  background-color: #f0f0f0 !important;
+}
+
+.bg-secondary-100 {
+  background-color: #f5f5f5 !important;
+}
+
+.bg-secondary-200 {
+  background-color: #f0f0f0 !important;
+}
+
+.bg-secondary-light {
+  background-color: #d9d9d9 !important;
+}
+
+.bg-secondary-400 {
+  background-color: #bfbfbf !important;
+}
+
+.bg-secondary-main {
+  background-color: #8c8c8c !important;
+}
+
+.bg-secondary-600 {
+  background-color: #595959 !important;
+}
+
+.bg-secondary-dark {
+  background-color: #262626 !important;
+}
+
+.bg-secondary-800 {
+  background-color: #141414 !important;
+}
+
+.bg-secondary-darker {
+  background-color: #000000 !important;
+}
+
+.bg-gray-a1 {
+  background-color: #ffffff !important;
+}
+
+.bg-gray-a2 {
+  background-color: #434343 !important;
+}
+
+.bg-gray-a3 {
+  background-color: #1f1f1f !important;
+}
+
+.custom-container {
+    text-align: center;
+    align-items: center; /* Ensures vertical alignment */
+  }
+    </style>
+</head>
+
+<body>
+    <div class="mt-0 ">
+        <div class="left-nav " id="leftNav">
+            <div class="mb-4 ">
+                <h3 class="d-flex align-items-center">
+                    <i class="fas fa-diamond text-primary me-2"></i>
+                    <span>Mantis</span>
+                    <div>
+                        <h5><span class="badge bg-dark text-light ms-2">v1.3.0</span></h5>
+                    </div>
+                </h3>
+            </div>
+            <div class="mt-3 ml-4">
+                <p class="section-title">Navigation</p>
+                <a href="#" class="nav-link active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            </div>
+            <div class="mt-4">
+                <p class="section-title">Authentication</p>
+                <a href="/login.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="/Register.html" class="nav-link"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+            <div class="mt-4">
+                <p class="section-title">Utilities</p>
+                <a href="https://mantisdashboard.io/free/typography" class="nav-link"><i class="fas fa-font"></i>
+                    Typography</a>
+                <a href="https://mantisdashboard.io/free/color" class="nav-link"><i class="fas fa-palette"></i>
+                    Color</a>
+                <a href="https://mantisdashboard.io/free/shadow" class="nav-link"><i class="fas fa-shapes"></i>
+                    Shadow</a>
+            </div>
+            <div class="mt-4">
+                <p class="section-title">Support</p>
+                <a href="https://mantisdashboard.io/free/sample-page" class="nav-link"><i class="fas fa-file-alt"></i>
+                    Sample Page</a>
+                <a href="https://codedthemes.gitbook.io/mantis" class="nav-link"><i class="fas fa-question-circle"></i>
+                    Documentation</a>
+            </div>
+            <div class="mantis-pro-card mt-5">
+                <img src="/avatar-group-Bo3V_god (1).png" alt="Pro Features" class="mb-3">
+                <p class="mb-2 fw-bold">Mantis Pro</p>
+                <p class="text-muted">Checkout pro features</p>
+                <a href="#" class="btn btn-pro"><i class="fas fa-crown"></i> Pro</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+        <!-- Menu Toggle Button -->
+        <button class="btn btn-link" id="menuToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Search Bar -->
+        <form class="d-flex mx-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <!-- Right-side Icons -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/" target="_blank" title="GitHub">
+                    <i class="bi bi-github fs-4"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Notifications">
+                    <i class="bi bi-bell fs-4"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/Anzar Pic 1.jpg" alt="User" class="rounded-circle me-2 "
+                        style="height: 30px; width: 30px;">
+                    <span>MD Anzar</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">View Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="mainContent">
+
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb ms-4">
+                <li class="breadcrumb-item mt-4"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active mt-4" aria-current="page">Color</li>
+            </ol>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-4 ">
+                <h3>Primary Color</h3>
+                <div class="bg-primary-lighter text-dark p-3 d-flex justify-content-between" style="height: 80px;" >Blue 1 - #667ff <span>primary.lighter</span></div>
+                <div class="bg-primary-100 text-dark p-3 d-flex justify-content-between" style="height: 80px;">Blue 2 - #bee7ff <span>primary[100]</span></div>
+                <div class="bg-primary-200 text-dark p-3 d-flex justify-content-between" style="height: 80px;">Blue 3 - #91d5ff <span>primary[200]</span></div>
+                <div class="bg-primary-light text-dark p-3 d-flex justify-content-between" style="height: 80px;">Blue 4 - #69c0ff <span>primary.light</span></div>
+                <div class="bg-primary-400 text-dark p-3 d-flex justify-content-between" style="height: 80px;">Blue 5 - #40a9ff <span>primary[400]</span></div>
+                <div class="bg-primary-main text-white p-3 d-flex justify-content-between" style="height: 80px;">Blue 6 - #1890ff <span>primary.main</span></div>
+                <div class="bg-primary-dark text-white p-3 d-flex justify-content-between" style="height: 80px;">Blue 7 - #096dd9 <span>primary.dark</span></div>
+                <div class="bg-primary-700 text-white p-3 d-flex justify-content-between" style="height: 80px;">Blue 8 - #0050b3 <span>primary[700]</span></div>
+                <div class="bg-primary-darker text-white p-3 d-flex justify-content-between" style="height: 80px;">Blue 9 - #003a8c <span>primary.darker</span></div>
+                <div class="bg-primary-900 text-white p-3 d-flex justify-content-between" style="height: 80px;">Blue 10 - #002766 <span>primary.900</span></div>
+              </div>
+              <div class="col-4">
+                <h3>Secondary Color</h3>
+                <div class="bg-secondary-lighter text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey 1 - #f0f0f0 <span>secondary.lighter</span></div>
+                <div class="bg-secondary-100 text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey 2 - #f5f5f5 <span>secondary[100]</span></div>
+                <div class="bg-secondary-200 text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey 3 - #f0f0f0 <span>secondary[200]</span></div>
+                <div class="bg-secondary-light text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey 4 - #d9d9d9 <span>secondary.light</span></div>
+                <div class="bg-secondary-400 text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey 5 - #bfbfbf <span>secondary[400]</span></div>
+                <div class="bg-secondary-main text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey 6 - #8c8c8c <span>secondary.main</span></div>
+                <div class="bg-secondary-600 text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey 7 - #595959 <span>secondary.600</span></div>
+                <div class="bg-secondary-dark text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey 8 - #262626 <span>secondary.dark</span></div>
+                <div class="bg-secondary-800 text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey 9 - #141414 <span>secondary[800]</span></div>
+                <div class="bg-secondary-darker text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey 10 - #000000 <span>secondary.darker</span></div>
+              </div>
+              <div class="col-4">
+                <h3>Other Color</h3>
+                <div class="bg-gray-a1 text-dark p-3 d-flex justify-content-between"style="height: 80px;">Grey A1 - #ffffff <span>Secondary A100</span></div>
+                <div class="bg-gray-a2 text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey A2 - #434343 <span>Secondary A200</span></div>
+                <div class="bg-gray-a3 text-white p-3 d-flex justify-content-between"style="height: 80px;">Grey A3 - #1f1f1f <span>Secondary A300</span></div>
+              </div>
+            </div>
+          </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const menuToggle = document.getElementById('menuToggle');
+            const leftNav = document.getElementById('leftNav');
+            const navbar = document.getElementById('navbar');
+            const mainContent = document.getElementById('mainContent');
+
+            menuToggle.addEventListener('click', () => {
+                leftNav.classList.toggle('open');
+                navbar.classList.toggle('shifted');
+                mainContent.classList.toggle('shifted');
+            });
+        </script>
+    </div>
+</body>
